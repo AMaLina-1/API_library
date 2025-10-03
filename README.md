@@ -26,4 +26,4 @@ This is for UPSTART1  SOA project API, we can find and test all the API here.
 
 ## CLI Sampling
 ```bash
-curl -H "Accept: application/json" "https://<host>/<path>?take=10&skip=0"
+curl -H "Accept: application/json" "https://opendata.hccg.gov.tw/API/v3/Rest/OpenData/5A07674C217C3EC7?take=10&skip=0"
