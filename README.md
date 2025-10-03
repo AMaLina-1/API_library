@@ -21,7 +21,10 @@ This is for UPSTART1  SOA project API, we can find and test all the API here.
 - <機關代碼(提供單位)>
 
 ## Business Entities
-- <Entity A>、<Entity B>、<Entity C>
+- **Spot (景點)**：新竹市觀光景點，包含名稱、地址、介紹等資訊
+- **District (行政區)**：新竹市行政區域劃分（東區、北區、香山區等）
+- **Agency (機關)**：提供開放資料的政府機關單位
+- **Tourist (遊客)**：使用景點資訊進行旅遊的使用者
 
 ## API Docs & Auth
 - Base: `<https://opendata.hccg.gov.tw>`
