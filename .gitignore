@@ -1,0 +1,4 @@
+config/secrets.yml
+spec/fixtures/
+!spec/fixtures/.keep
+lib/api_test.rb
