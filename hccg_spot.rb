@@ -5,7 +5,7 @@ require 'http'
 require 'json'
 require 'yaml'
 require 'fileutils'
-require_relative 'lib/http_request'
+require_relative 'http_request'
 require_relative 'json_to_yaml'
 
 page1 = http_request('hccg', { 'take' => 10, 'skip' => 0 })
