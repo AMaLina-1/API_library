@@ -12,6 +12,9 @@ gem 'rubocop', '~> 1.0'
 # testing
 gem 'minitest', '~> 5.0'
 gem 'minitest-rg', '~> 5.0'
+gem 'simplecov', '~> 0'
+gem 'vcr', '~> 6'
+gem 'webmock', '~> 3'
 
 group :development, :test do
   gem 'rspec', '~> 3.0'
