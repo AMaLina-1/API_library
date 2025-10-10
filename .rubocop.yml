@@ -1,0 +1,41 @@
+# RuboCop 設定檔
+# 參考：https://docs.rubocop.org/rubocop/configuration.html
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'   # 測試錄檔/樣本資料通常不需要掃
+    - 'bin/**/*'             # 若有可執行腳本
+    - 'tmp/**/*'             # 暫存
+
+# 單行長度（一般程式碼 120 字元；測試檔放寬或排除）
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+# 方法/類別長度：主程式碼維持門檻；測試檔排除
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ClassLength:
+  Max: 200
+  Exclude:
+    - 'spec/**/*'
+
+# 區塊長度：測試常見大區塊，排除
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+# 字串引號：單引號優先（有插值/跳脫時 RuboCop 自然會接受雙引號）
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+# 小專案可關閉強制文件註解
+Style/Documentation:
+  Enabled: false
